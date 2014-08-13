@@ -2,14 +2,11 @@ package org.superhy.service;
 
 import javax.annotation.Resource;
 
-import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.stereotype.Service;
 import org.superhy.dao.UserInfoDao;
-import org.superhy.dao.impl.UserInfoJdbcDaoImpl;
 import org.superhy.model.UserInfo;
 
-@Component("userInfoService")
+@Service("userInfoService")
 public class UserInfoService {
 
 	private UserInfoDao userInfoDao;
